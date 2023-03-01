@@ -39,6 +39,7 @@
             }
             .social-links{
                 margin-top: 2rem;
+                animation: navLinkFade;
                 a{
                     font-size: 1.5rem;
                     background: #212431;
@@ -94,6 +95,17 @@
                     }
                 }
             }
+        }
+    }
+
+    @keyframes navIndiceFade{
+        from{
+            opacity: 0;
+            transform: translateX(5rem);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 }
