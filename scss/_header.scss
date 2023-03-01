@@ -42,5 +42,33 @@
                 background: #149ddd;
             }
         }
+        .nav-menu{
+            padding: 1.5rem;
+            .nav-item{
+                a:hover{
+                    text-decoration: none;
+                    color: #fff;
+                    i{
+                        text-decoration: none;
+                        color: #149ddd;
+                    }
+                }
+                a:focus{
+                    display: flex;
+                    align-items: center;
+                    color: #a8a9b4;
+                    transition: 0.3s;
+                    font-size: 1.5rem;
+                    i{
+                        font-size: 24px;
+                        padding-right: 0.8rem;
+                        color: #6f7180;
+                    }
+                }
+            }
+            
+        
+           
+        }
     }
 }
