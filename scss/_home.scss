@@ -61,6 +61,13 @@ body{
 }
 
 
+.menu-nav-active{
+    overflow: hidden;
+}
+.menu-nav-active #header{
+    left: 0;
+}
+
 @media (max-width: 1024px){
     .menu-mobile{
         display: flex;
