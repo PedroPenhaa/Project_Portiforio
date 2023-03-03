@@ -3,13 +3,25 @@ body{
         width: 100%;
         height: 100vh;
     }
-    i{
-        .menu-mobile{
-            position: fixed;
-        }
-    }
 }
 
+
+    .menu-mobile{
+        position: fixed;
+        color: #fff;
+        background-color: #252c90;
+        right: 1rem;
+        top: 1rem;
+        font-size: 1.5rem;
+        border-radius: 4rem;
+        cursor: pointer;
+        z-index: 10;
+        width: 45px;
+        height: 45px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 #main{
@@ -45,5 +57,29 @@ body{
           color: #fff; 
         }
        }
+    }
+}
+
+
+@media (max-width: 1024px){
+    .menu-mobile{
+        display: flex;
+    }
+    #header{
+        left: -30rem;
+    }
+    #main{
+        margin-left: 0;
+        #inicio{
+            .flex-column{
+                h2{
+                    font-size: 3.5rem;
+                }
+                span{
+                    margin-right: 0;
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }
