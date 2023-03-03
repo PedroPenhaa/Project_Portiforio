@@ -5,8 +5,7 @@ body{
     }
 }
 
-
-    .menu-mobile{
+.menu-mobile{
         position: fixed;
         color: #fff;
         background-color: #252c90;
@@ -21,8 +20,7 @@ body{
         display: none;
         align-items: center;
         justify-content: center;
-    }
-
+}
 
 #main{
     margin-left: 30rem;
@@ -60,6 +58,21 @@ body{
     }
 }
 
+/* Estilização ScrollView */
+*::-webkit-scrollbar{
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #00000050;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #252c90;
+    
+}
 
 .menu-nav-active{
     overflow: hidden;
