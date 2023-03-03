@@ -1,5 +1,4 @@
 /* Abre e fecha o menu lateral em modo mobile */
-
 const menuMobile = document.querySelector('.menu-mobile')
 const body = document.querySelector('body')
 
@@ -11,6 +10,20 @@ menuMobile.addEventListener('click', () => {
 })
 
 
+
+/* Fecha o menu quando cliclar em algum item e muda o icone para list */
+const navItem = document.querySelectorAll('.nav-item')
+
+navItem.forEach(item => {
+    item.addEventListener('click', () =>{
+        if (body.classList.contains("menu-nav-active")){
+            body.classList.remove("menu-nav-active")
+            menuMobile.classList.replace("bi-x", "bi-list");
+        }
+    })
+})
+
+console.log(navItem)
 
 
 
