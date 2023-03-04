@@ -60,6 +60,46 @@ body{
     #habilidades{
            background-color: #eff5ff; 
     }
+    #curriculo{
+        .cv-title{
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            color: #050d18;
+        }
+        .cv-item::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -.9rem;
+            width: 1.6rem;
+            height: 1.6rem;
+            border: .2rem solid #1f5297;
+            background: #fff;
+            border-radius: 50%;
+        }
+        .cv-item{
+            padding: 0 0 2rem 2rem;
+            margin-top: -2rem;
+            border-left: 2px solid #1f5297;
+            position: relative;
+            h4{
+                line-height: 1.8rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-family: "Poppins", sans-serif;
+                color: #050d18;
+                margin-bottom: 1rem;
+            }
+            h5{
+                background: #e4edf9;
+                padding: .5rem 1.5rem;
+                display: inline-block;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 
 /* Estilização ScrollView */
