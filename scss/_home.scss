@@ -1,4 +1,5 @@
 body{
+    width: 100%;
   /*  img{
         width: 100%;
         height: 100vh;
@@ -24,7 +25,8 @@ body{
 }
 
 #main{
-    margin-left: 30rem;
+    margin-left: 25rem;
+    
     #inicio{
         background-image: url("../img/fundo.png");
         background-repeat: no-repeat;
@@ -36,7 +38,7 @@ body{
         z-index: -1;
 
        .flex-column{
-        h2{
+       h2{
             font-size: 6rem;
        }
        span{
@@ -116,6 +118,13 @@ body{
     }
 }
 
+
+
+
+
+
+
+
 /* Estilização ScrollView */
 *::-webkit-scrollbar{
     width: 1rem;
@@ -129,7 +138,7 @@ body{
 
 *::-webkit-scrollbar-thumb{
     background-color: #252c90;
-    
+    right: -1rem;
 }
 
 .menu-nav-active{
@@ -175,7 +184,7 @@ body{
 
 
 
-@media (max-width: 1024px){
+@media (max-width: 1190px){
     .menu-mobile{
         display: flex;
     }
@@ -186,6 +195,7 @@ body{
         margin-left: 0;
         #inicio{
             .flex-column{
+               
                 h2{
                     font-size: 3.5rem;
                 }
