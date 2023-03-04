@@ -9,8 +9,6 @@ menuMobile.addEventListener('click', () => {
     body.classList.toggle("menu-nav-active")
 })
 
-
-
 /* Fecha o menu quando cliclar em algum item e muda o icone para list */
 const navItem = document.querySelectorAll('.nav-item')
 
@@ -23,11 +21,27 @@ navItem.forEach(item => {
     })
 })
 
-console.log(navItem)
+// Animar todos os itens na tela que tiverem meu atributo data-anime 
+
+const item = document.querySelectorAll("[data-anime]");
+
+const animeScroll = () => {
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85;
+
+    //Verifica item*item
+    item.forEach(element => {
+        if (windowTop > element.offsetTop){
+            element.classList.add("animate");
+        }else{
+            element.classList.remove("animate");
+        }
+    });
+};
 
 
-
-
+window.addEventListener("scroll", () =>{
+    animeScroll();
+})
 
 
 
