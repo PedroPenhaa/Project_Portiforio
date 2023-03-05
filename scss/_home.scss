@@ -14,6 +14,9 @@ body{
         height: 100vh;
     }
    */
+   .section-bg{
+    background-color: #eff5ff; 
+   }
 }
 
 .menu-mobile{
@@ -70,20 +73,51 @@ body{
     }
 
     #sobre{
-        h2{
-            font-weight: 700;
-        }
-        p{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-        }
+       
+            h2{
+                font-weight: 700;
+            }
+            h3{
+                font-weight: 500;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4rem;       
+            }
+            img{
+                border-radius: 5%;
+            }
+        
+      
     }
 
     #habilidades{
-           background-color: #eff5ff; 
-           margin-top: 4rem;
+         
+            h2{
+                font-weight: 700;
+            }
+        
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4rem;       
+            }
+            #card_habilidades{
+                p{
+                    padding-bottom: .5rem;
+                }
+                .progress{
+                    display: flex;
+                    align-items: center;
+                    height: 1.5rem;
+                    font-size: 1rem;
+                   }
+            }
+
+           
     }
     #curriculo{
         .cv-title{
