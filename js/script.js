@@ -29,7 +29,7 @@ navItem.forEach(item => {
 const item = document.querySelectorAll("[data-anime]");
 
 const animeScroll = () => {
-    const windowTop = window.pageYOffset + window.innerHeight * 0.98;
+    const windowTop = window.pageYOffset + window.innerHeight * 0.99;
 
     //Verifica item*item
     item.forEach(element => {
